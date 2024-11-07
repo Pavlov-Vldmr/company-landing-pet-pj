@@ -3,6 +3,9 @@
 @include mq(laptop-l) {
 }
 @include mq(tablet-l) {
+  .video__container {
+    margin-bottom: 50px;
+  }
 }
 @include mq(tablet) {
 }

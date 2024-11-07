@@ -1,11 +1,47 @@
 @include mq(laptop) {
-  
 }
 
 @include mq(tablet) {
-  
+  .footer {
+    margin-top: 100px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__socials {
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      span {
+      }
+      ul {
+        li > a > img {
+          height: 30px;
+          width: 30px;
+        }
+      }
+      margin-bottom: 30px;
+    }
+
+    &__search {
+      h3 {
+        font-size: 20px;
+      }
+      input {
+        &[placeholder] {
+          &:focus {
+          }
+
+          &:-internal-autofill-selected {
+          }
+        }
+      }
+    }
+  }
 }
 
 @include mq(mobile) {
-  
 }

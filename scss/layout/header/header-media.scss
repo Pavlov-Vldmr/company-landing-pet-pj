@@ -1,11 +1,15 @@
 @include mq(laptop) {
-  
 }
 
 @include mq(tablet) {
-  
+  .header {
+    &__logo {
+      a {
+        display: none;
+      }
+    }
+  }
 }
 
 @include mq(mobile) {
-  
 }

@@ -5,6 +5,27 @@
 @include mq(tablet-l) {
 }
 @include mq(tablet) {
+  .proposal__container {
+  }
+
+  .proposal__item {
+    // flex-direction: column;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    &-text {
+      h3 {
+        color: red;
+      }
+      p {
+      }
+    }
+
+    &-reverse {
+      img {
+        order: 1;
+      }
+    }
+  }
 }
 @include mq(mobile-l) {
 }

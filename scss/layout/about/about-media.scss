@@ -3,13 +3,42 @@
 @include mq(laptop-l) {
 }
 @include mq(tablet-l) {
-}
-@include mq(tablet) {
-  .test-class {
-    .test {
-      background-color: rgb(117, 128, 0);
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+    // grid-template-columns: none;
+    // grid-template-rows: repeat(2, 1fr);
+
+    &__stats {
+      &-item {
+        margin-bottom: 20px;
+        &-count {
+          font-size: 44px;
+          line-height: 60px;
+        }
+        &-text {
+          // color: $color-additional;
+        }
+      }
+    }
+    &__info {
+      order: -1;
+
+      h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 40px;
+      }
+      p {
+        margin-bottom: 40px;
+      }
     }
   }
+}
+@include mq(tablet) {
 }
 @include mq(mobile-l) {
 }

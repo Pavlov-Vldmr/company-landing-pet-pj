@@ -273,6 +273,11 @@ header {
   color: #838383;
 }
 
+@media (max-width: 768px) {
+  .header__logo a {
+    display: none;
+  }
+}
 .test-class {
   background-color: rgb(75, 73, 77);
 }
@@ -326,9 +331,30 @@ header {
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .test-class .test {
-    background-color: rgb(117, 128, 0);
+@media (max-width: 992px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .about__stats-item {
+    margin-bottom: 20px;
+  }
+  .about__stats-item-count {
+    font-size: 44px;
+    line-height: 60px;
+  }
+  .about__info {
+    order: -1;
+  }
+  .about__info h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  .about__info p {
+    margin-bottom: 40px;
   }
 }
 .proposal__container {
@@ -357,6 +383,18 @@ header {
   order: -1;
 }
 
+@media (max-width: 768px) {
+  .proposal__item {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .proposal__item-text h3 {
+    color: red;
+  }
+  .proposal__item-reverse img {
+    order: 1;
+  }
+}
 .quote {
   margin-top: 190px;
   width: 100%;
@@ -369,6 +407,19 @@ header {
   margin-bottom: 30px;
 }
 
+@media (max-width: 992px) {
+  .quote {
+    margin-top: 190px;
+    width: 100%;
+  }
+  .quote__container .descriptor {
+    margin-bottom: 50px;
+  }
+  .quote__container .quote-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 .services__container {
   margin-top: 190px;
 }
@@ -437,6 +488,12 @@ header {
   margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+  .top__container h1 {
+    line-height: 60px;
+    font-size: 56px;
+  }
+}
 .video__container {
   margin-bottom: 190px;
 }
@@ -449,6 +506,11 @@ header {
   object-fit: cover;
 }
 
+@media (max-width: 992px) {
+  .video__container {
+    margin-bottom: 50px;
+  }
+}
 .footer {
   background-color: #1d1d1f;
   height: 400px;
@@ -502,6 +564,29 @@ header {
   background-color: rgba(189, 189, 189, 0);
 }
 
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 100px;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__socials {
+    margin-bottom: 30px;
+  }
+  .footer__socials h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .footer__socials ul li > a > img {
+    height: 30px;
+    width: 30px;
+  }
+  .footer__search h3 {
+    font-size: 20px;
+  }
+}
 /*
  *  Owl Carousel - Core
  */
