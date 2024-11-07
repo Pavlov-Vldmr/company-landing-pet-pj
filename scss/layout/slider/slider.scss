@@ -1,0 +1,39 @@
+.slider {
+  display: flex;
+  align-items: center;
+  margin-top: 190px;
+
+  .owl-carousel {
+    .item {
+      img {
+        height: calc(100vh - 50px);
+      }
+    }
+  }
+}
+
+.carousel-nav {
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 400px);
+    position: absolute;
+    z-index: 2;
+    padding: 0px 200px;
+
+    .custom-btn {
+      cursor: pointer;
+      height: 60px;
+      width: 60px;
+      background-color: rgba(184, 184, 184, 0);
+      border: none;
+      background-image: url(../../../assets/images/icons/leftArrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:last-child {
+        transform: scale(-1, 1);
+      }
+    }
+  }
+}

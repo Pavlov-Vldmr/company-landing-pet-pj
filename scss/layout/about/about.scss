@@ -1,0 +1,33 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  margin-top: 190px;
+  margin-bottom: 190px;
+
+  &__stats {
+    &-item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 60px;
+      &-count {
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 89.6px;
+        text-align: left;
+        color: $text_color;
+      }
+      &-text {
+        color: $color-additional;
+      }
+    }
+  }
+  &__info {
+    h2 {
+      margin-bottom: 90px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

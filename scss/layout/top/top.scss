@@ -1,0 +1,25 @@
+.top {
+  background-image: url(../assets/images/top.jpg);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: $text_color-light;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+
+    h1 {
+      max-width: 940px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      max-width: 470px;
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.services__container {
+  margin-top: 190px;
+  .services__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    padding: 40px 0;
+    border-top: 1px solid #1d1d1f;
+
+    p {
+      color: $color-additional;
+    }
+  }
+}

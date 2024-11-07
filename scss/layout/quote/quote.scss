@@ -1,0 +1,16 @@
+.quote {
+  margin-top: 190px;
+  width: 100%;
+
+  &__container {
+    .descriptor {
+      margin-bottom: 50px;
+    }
+
+    .quote-text {
+      max-width: 820px;
+
+      margin-bottom: 30px;
+    }
+  }
+}

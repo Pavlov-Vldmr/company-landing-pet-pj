@@ -1,0 +1,36 @@
+header {
+  position: absolute;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    a {
+      color: $text_color-light;
+    }
+  }
+
+  .navigation {
+    ul {
+      display: flex;
+      gap: 35px;
+
+      li {
+        a {
+          color: $text_color-light;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+          a {
+            color: $color-additional;
+          }
+        }
+      }
+    }
+  }
+}

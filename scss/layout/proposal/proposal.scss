@@ -1,0 +1,32 @@
+.proposal__container {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.proposal__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  //   order: 1;
+  //   grid-auto-flow: dense;
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 60px;
+    }
+  }
+
+  &-reverse {
+    img {
+      order: -1;
+    }
+  }
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/icons/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./js/jquery.min.js" defer></script>
+
+    <script src="./js/script.js" defer></script>
+
+    <script defer src="./js/owl-carousel/owl.carousel.min.js"></script>
+
+    <title>Clear scss project</title>
+    <!-- covmpilation "scss" to 'css' read './readme' -->
+    <!-- use 'jquery' || end './index.html' -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container header">
+        <h2 class="header__logo"><a href="#">Company</a></h2>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="top">
+      <div class="container top__container">
+        <h1>
+          We produce <br />
+          the best products
+        </h1>
+        <p>
+          Mattis quam, lectus et justo amet, tortor, lectus dapibus est.
+          Habitasse efficitur sodales vel est.
+        </p>
+        <a href="#" class="button button-light">Button</a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container about">
+        <div class="about__stats">
+          <div class="about__stats-item">
+            <span class="about__stats-item-count">20000</span>
+            <span class="about__stats-item-text">completed projects</span>
+          </div>
+          <div class="about__stats-item">
+            <span class="about__stats-item-count">10000</span>
+            <span class="about__stats-item-text">prototypes</span>
+          </div>
+          <div class="about__stats-item">
+            <span class="about__stats-item-count">347</span>
+            <span class="about__stats-item-text">completed projects</span>
+          </div>
+        </div>
+        <div class="about__info">
+          <h2>
+            Amet, mattis dapibus malesuada arcu dapibus nec efficitur et dictum.
+            In sit odio. Tempus leo, dictum.
+          </h2>
+          <p>
+            Amet, mattis dapibus malesuada arcu dapibus nec efficitur et dictum.
+            In sit odio. Tempus leo, dictum. Sit mattis mattis lorem cursus
+            velit sit sed et vitae quam, sed nulla dapibus venenatis odio.
+          </p>
+          <p>
+            Venenatis sapien aenean adipiscing lacinia nec lacinia lacinia et
+            quam, ultricies. Dictum. Ipsum sodales sit id nec sed sodales mattis
+            mollis quis, pellentesque habitasse ex.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="container video__container">
+        <video
+          src="./assets/video/video.mp4"
+          controls="controls"
+          poster="./assets/images/video-poster.jpg"
+        >
+          Sorry, your browser doesn't support embedded videos, but don't worry,
+          you can
+          <a href="./assets/video/video.mp4">download it</a>
+          and watch it with your favorite video player!
+        </video>
+      </div>
+    </section>
+    <section class="proposal">
+      <div class="container proposal__container">
+        <div class="proposal__item">
+          <div class="proposal__item-text">
+            <h3>Et odio</h3>
+            <p>
+              Mauris eget nec nulla dolor ex. Sodales luctus pellentesque cras
+              ornare lorem luctus lectus sed consectetur quam, est. Libero, odi
+            </p>
+            <a href="#" class="button button-dark">Button</a>
+          </div>
+          <img
+            src="./assets/images/propose1.jpg"
+            width="570px"
+            height="400px"
+            alt="image"
+          />
+        </div>
+        <div class="proposal__item proposal__item-reverse">
+          <div class="proposal__item-text">
+            <h3>Integer dapibus dictum</h3>
+            <p>
+              it pulvinar tempus amet dolor dui vulputate tortor, luctus lorem
+              in nunc eleifend ipsum justo et venenatis dictumst.
+            </p>
+            <a href="#" class="button button-dark">Button</a>
+          </div>
+          <img
+            src="./assets/images/propose2.jpg"
+            width="570px"
+            height="400px"
+            alt="image"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="quote">
+      <div class="container quote__container">
+        <span class="descriptor">Quote</span>
+        <p class="quote-text">
+          Accumsan vulputate efficitur in amet, vestibulum ornare morbi accumsan
+          leo, est. Consectetur ultricies. Sapien est. Dictumst. Sapien
+          habitasse interdum in amet, lectus molestie vel ut. Malesuada
+          efficitur mattis id mattis aenean interdum lectus quam, dapibus nec
+          augue vulputate leo, ornare elit.
+        </p>
+        <span class="descriptor"><b>Alex Lee /</b> Co-founder & SEO</span>
+      </div>
+    </section>
+
+    <section class="slider">
+
+      <div class="carousel-nav">
+        <div class="carousel-nav__btns">
+          <button class="custom-btn customPrevBtn"></button>
+          <button class="custom-btn customNextBtn"></button>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img  src="./assets/images/slider/slide.jpg" ></img></div>
+        <div class="item"><img  src="./assets/images/slider/slide2.jpg" ></img></div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container services__container">
+        <div class="services__item">
+          <h3>Branding</h3>
+          <p>
+            Quam, tortor, interdum consectetur eleifend integer et. Accumsan
+            vulputate efficitur in amet, vestibulum ornare morbi accumsan leo,
+            est. Consectetur ultricies.
+          </p>
+        </div>
+        <div class="services__item">
+          <h3>Web-apps</h3>
+          <p>
+            Malesuada efficitur mattis id mattis aenean interdum lectus quam,
+            dapibus nec augue vulputate leo, ornare elit. Pulvinar sed quam,
+            arcu pulvinar nisi ipsum quis, sodales molestie ex.
+          </p>
+        </div>
+        <div class="services__item">
+          <h3>Design</h3>
+          <p>
+            Cras amet, sed sapien orci, leo, sit ornare risus tortor, ex. Mauris
+            non orci, sed elit. Cursus ex. Aenean ipsum dolor augue tempus et
+            molestie ipsum adipiscing leo, sit interdum venenatis odio.
+          </p>
+        </div>
+        <div class="services__item">
+          <h3>Strategy</h3>
+          <p>
+            Quam, tortor, interdum consectetur eleifend integer et. Accumsan
+            vulputate efficitur in amet, vestibulum ornare morbi accumsan leo,
+            est. Consectetur ultricies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__socials">
+          <h3>Company</h3>
+          <span>Dorivit BV, Monitorweg 1, Almere 1322BJ, Netherlands</span>
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/socials/Facebook.svg"
+                  width="40px"
+                  height="40px"
+                  alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/socials/Telegram.svg"
+                  width="40px"
+                  height="40px"
+                  alt="tg"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/images/socials/Google.svg"
+                  width="40px"
+                  height="40px"
+                  alt="google+ "
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__search">
+          <h3>Id sodales interdum dui mollis non in odio</h3>
+          <input type="email" name="email" placeholder="E-MAIL" />
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- jquery -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+</html>
