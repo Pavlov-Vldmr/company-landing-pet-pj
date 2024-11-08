@@ -3,6 +3,19 @@
 @include mq(laptop-l) {
 }
 @include mq(tablet-l) {
+  .services__container {
+    margin-top: 100px;
+    .services__item {
+      display: flex;
+      flex-direction: column;
+      h3 {
+      }
+      p {
+        margin-top: 20px;
+        color: $color-additional;
+      }
+    }
+  }
 }
 @include mq(tablet) {
 }

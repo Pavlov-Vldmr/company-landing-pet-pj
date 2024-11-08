@@ -9,14 +9,18 @@
   }
 
   .proposal__item {
-    // flex-direction: column;
     grid-template-columns: none;
     grid-template-rows: repeat(2, 1fr);
     &-text {
       h3 {
-        color: red;
+        // color: red;
       }
       p {
+        margin-bottom: 20px;
+      }
+
+      a {
+        margin-bottom: 20px;
       }
     }
 

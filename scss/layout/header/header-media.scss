@@ -3,9 +3,24 @@
 
 @include mq(tablet) {
   .header {
+    justify-content: center;
     &__logo {
       a {
         display: none;
+      }
+    }
+
+    .navigation {
+      ul {
+        gap: 15px;
+        li {
+          a {
+          }
+          &:hover {
+            a {
+            }
+          }
+        }
       }
     }
   }
